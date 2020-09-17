@@ -1,28 +1,25 @@
+#side-bar,
+#nav-bar,
+#main-bar {
+  float: left;
+}
 
-  #side-bar,
-  #nav-bar,
-  #main-bar {
-    float: left;
-  }
-  
-  #search-bar {
-    width: 70%;
-  }
-  
-  #side-bar {
-    width: 30%;
-    height: 20%;
-    color:
+#search-bar {
+  width: 70%;
+}
 
-  }
-  
-  #nav-bar {
+#side-bar {
+  width: 30%;
+  height: 20%;
+}
 
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-  }
-  #main-bar {
-      width: 200px;
-      height: 200px;;
-  }
+#nav-bar {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+#main-bar {
+  width: 200px;
+  height: 200px;
+}
