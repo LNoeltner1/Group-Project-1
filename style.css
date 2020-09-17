@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #side-bar,
 #nav-bar,
 #main-bar {
@@ -23,3 +24,42 @@
   width: 200px;
   height: 200px;
 }
+=======
+  #nav-bar,
+  #Home,
+  #search-bar,
+  #Songs,
+  #Game,
+  #Videos,
+  #main-bar, {
+    float: left;
+  }
+  
+  #home {
+    width: 30%;
+    height: 20%;
+    color:
+ }
+
+  #search-bar {
+    width: 70%;
+  }
+  
+  #songs {
+    width: 30%;
+    height: 20%;
+    color:
+
+  }
+  
+  #games {
+
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  #videos {
+      width: 200px;
+      height: 200px;;
+  }
+>>>>>>> 61ccfea69ec166c5809eeb492bf4a8ffd73083d3
