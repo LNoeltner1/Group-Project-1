@@ -1,28 +1,65 @@
+<<<<<<< HEAD
+#side-bar,
+#nav-bar,
+#main-bar {
+  float: left;
+}
 
-  #side-bar,
+#search-bar {
+  width: 70%;
+}
+
+#side-bar {
+  width: 30%;
+  height: 20%;
+}
+
+#nav-bar {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+#main-bar {
+  width: 200px;
+  height: 200px;
+}
+=======
   #nav-bar,
-  #main-bar {
+  #Home,
+  #search-bar,
+  #Songs,
+  #Game,
+  #Videos,
+  #main-bar, {
     float: left;
   }
   
+  #home {
+    width: 30%;
+    height: 20%;
+    color:
+ }
+
   #search-bar {
     width: 70%;
   }
   
-  #side-bar {
+  #songs {
     width: 30%;
     height: 20%;
     color:
 
   }
   
-  #nav-bar {
+  #games {
 
     width: 200px;
     height: 200px;
     margin-right: 20px;
   }
-  #main-bar {
+  #videos {
       width: 200px;
       height: 200px;;
   }
+>>>>>>> 61ccfea69ec166c5809eeb492bf4a8ffd73083d3
