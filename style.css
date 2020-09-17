@@ -1,28 +1,37 @@
-
-  #side-bar,
   #nav-bar,
-  #main-bar {
+  #Home,
+  #search-bar,
+  #Songs,
+  #Game,
+  #Videos,
+  #main-bar, {
     float: left;
   }
   
+  #home {
+    width: 30%;
+    height: 20%;
+    color:
+ }
+
   #search-bar {
     width: 70%;
   }
   
-  #side-bar {
+  #songs {
     width: 30%;
     height: 20%;
     color:
 
   }
   
-  #nav-bar {
+  #games {
 
     width: 200px;
     height: 200px;
     margin-right: 20px;
   }
-  #main-bar {
+  #videos {
       width: 200px;
       height: 200px;;
   }
