@@ -1,81 +1,106 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>K!DSTR</title>
-        
-        <link rel="stylesheet" id="CSS-sheet" href="style.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    </head>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>K!DSTR</title>
+    <meta name="description" content="Weather search app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="row"  id="searchAndNav">
+      <section class="col-md-1"></section>
+      <section class="col-md-3">
+        <textarea class="searchBox">Search</textarea>
+        <button  id="searchBtn">Search</button>
+      </section>
+      <section class="col-md-3"  id="logo">
+        <h1>K!DSTR</h1>
+      </section>
+      <section class="col-md-5">
+        <button  id="musicBtn">Music</button>
+        <button id="vidBtn">Videos</button>
+        <button id="musicBtn">Music</button>
+      </section>
+    </header>
+    <hr />
+    <br />
+    <!-- Main -->
+    <container class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-3" id="sideBar">
+        <div class="row">
+          <h2 class="col-md-12">Topics:</h2>
+        </div>
+        <hr />
+        <div class="row">
+          <button id="funnyBtn">Funny</button>
+        </div>
+        <br />
+        <div class="row">
+          <button id="learningBtn">Learning</button>
+        </div>
+        <br />
+        <div class="row">
+          <button id="artBtn">Arts & Crafts</button>
+        </div>
+        <br />
+        <div class="row">
+          <button id="familyBtn">Family</button>
+        </div>
+      </div>
+      <div class="col-md-8"  id="mainSection">
+        <h3 class="row">Home Page</h3>
+        <hr />
+        <br />
+        <div class="row">
+          <div class="col-md-6" id="media1">*Media Goes Here*</div>
+          <div class="col-md-6">
+            <p id="title1">Title:</p>
+            <p id="description1">Description</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6" id="media2">*Media Goes Here*</div>
+          <div class="col-md-6">
+            <p id="title2">Title:</p>
+            <p id="description2">Description</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6" id="media3">*Media Goes Here*</div>
+          <div class="col-md-6">
+            <p id="title3">Title:</p>
+            <p id="description3">Description</p>
+          </div>
+        </div>
+      </div>
+    </container>
+    <!-- JS scripts -->
+    <script rel="stylesheet" src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script rel = "stylesheet" src = "script.js"  id="JS-sheet" async defer></script>
+  </body>
+</html>
 
-    <body>
-        <container class="container">
-            <section class="row" id="searchAndNav">
-                <div class="col-md-12" id="searchBar">
-                    <textarea name="searchBox" id="searchBox">Search Text</textarea>
-                    <button id="searchBtn">Search</button>
-                    <text id="logo">K!DSTR</text>
-                    <button id="musicBtn">Music</button>
-                    <button id="vidBtn">Videos</button>
-                    <button id="picBtn">Pictures</button>
-                </div>
-            </section>
-            <section class="row" id="pageTitle">
-                <div class="col-md-4" id="blank"></div>
-                <div class="col-md-8" id="pageTitle">Title</div>
-            </section>
-            <section class="row" id="sideBarPlusMain">
-                <section class="col-md-3" id="sideBar">
-                    <div class="row">
-                        <button class="col-md-12" id="topicFunny">Funny</button>
-                        <button class="col-md-12" id="topicLearning">Learning</button>
-                        <button class="col-md-12" id="topicArtsCrafts">Arts & Crafts</button>
-                        <button class="col-md-12"id="topicFamily">Family</button>
-                    </div>
-                </section>
-                <section class="col-md-1" id="blank"></section>
-                <section class="col-md-7" id="mainSection">
-                    <section id="resultOne">
-                        <div class="col-md-6" id="resultOnePreview"></div>
-                        <div class="col-md-5" id="resultOneText">
-                            <div class="row" id="titleOne">Title</div>
-                            <div class="row" id="descriptionOne">Description</div>
-                        </div>    
-                    </section>    
-                    <section id="resultOne">
-                        <div class="col-md-6" id="resultTwoPreview"></div>
-                        <div class="col-md-5" id="resultTwoText">
-                            <div class="row" id="titleTwo">Title</div>
-                            <div class="row" id="descriptionTwo">Description</div>
-                        </div>
-                    </section>
-                    <section id="resultOne">
-                        <div class="col-md-6" id="resultThreePreview"></div>
-                        <div class="col-md-5" id="resultThreeText">
-                            <div class="row" id="titleThree">Title</div>
-                            <div class="row" id="descriptionThree">Description</div>
-                        </div>
-                    </section>
-                    <section id="resultOne">
-                        <div class="col-md-6" id="resultFourPreview"></div>
-                        <div class="col-md-5" id="resultFourText">
-                            <div class="row" id="titleFour">Title</div>
-                            <div class="row" id="descriptionFour">Description</div>
-                        </div>
-                    </section>
-                    <section id="resultOne">
-                        <div class="col-md-6" id="resultFivePreview"></div>
-                        <div class="col-md-5" id="resultFiveText">
-                            <div class="row" id="titleFive">Title</div>
-                            <div class="row" id="descriptionFive">Description</div>
-                        </div>
-                    </section>
-                    <!-- can add more with JS -->
-                </section>
-            </section> 
+
+
+
+
         </container>
-        <script rel="stylesheet" src = "https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
-        <script rel = "stylesheet" src = "script.js"  id="JS-sheet" async defer></script>
+        
     </body>
 </html>
