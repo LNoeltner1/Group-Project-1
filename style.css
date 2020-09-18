@@ -1,3 +1,9 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: 200;
+  text-align: center;
+}
 button {
   background-color: rgb(red, green, blue);
 }
@@ -13,9 +19,9 @@ button {
 
 #searchBtn {
   margin-left: 5px;
-  padding: 15px;
+  padding: 12px;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .searchBox {
   margin-top: 20px;
