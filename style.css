@@ -1,5 +1,5 @@
 button {
-  background-color: rgb(213, 172, 252);
+  background-color: rgb(red, green, blue);
 }
 
 #searchAndNav,
@@ -8,7 +8,7 @@ button {
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
-  background-color: rgb(240, 252, 172);
+  background-color: rgb(172, 249, 252);
 }
 
 #searchBtn {

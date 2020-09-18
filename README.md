@@ -9,7 +9,7 @@ Group Project One
 WHEN I open the site
 THEN I am asked to confirm if I have parental permission
 WHEN I Confirm
-THEN I see the home page with 2 options (1=7 years or older, 2 = younger than 7 years)
+THEN I see the home page
 WHEN I select an option
 THEN I am brought to the home page of that option and given choices of media type(s)
 WHEN I choose a media type(s),
@@ -30,7 +30,14 @@ Sydney Buchanan
 Wilmer Rivera
 
 Apis used
+<<<<<<< HEAD
 
 User Story:
 "It isn't always easy monitoring what my kids watch on the internet when I'm not around. I love this app because it allows my kids to surf the web with all adult content filtered out."
 -Supermom
+
+"As a parent, I want to keep kids entertained with safe content, while I'm occupied elsewhere with peace of mind."
+-CoolDad73
+=======
+
+> > > > > > > 79b55fd0c67a232821b5ee2411dfb2625246c17b
