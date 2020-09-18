@@ -51,11 +51,10 @@ h1 {
   margin-top: 15px;
 }
 
-#media1,
-#media2,
-#media3 {
+.media {
   max-width: 500px;
   max-height: 500px;
+  margin-left: 20px;
 }
 /* #home {
   width: 30%;
