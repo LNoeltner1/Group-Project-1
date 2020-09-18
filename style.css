@@ -1,31 +1,41 @@
+button {
+  background-color: rgb(213, 172, 252);
+}
+
 #searchAndNav,
 #sideBar,
 #mainSection {
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
+  background-color: rgb(240, 252, 172);
 }
 
 #searchBtn {
-  margin-bottom: 15px;
   margin-left: 5px;
   padding: 15px;
   border-radius: 6px;
+  margin-bottom: 15px;
 }
 .searchBox {
   margin-top: 20px;
+  max-width: 200px;
+  max-height: 50px;
 }
 
 .headBtn {
-  margin-top: 25px;
+  margin-top: 15px;
   padding: 15px;
   border-radius: 6px;
+  font-size: 30px;
 }
 
 .topicBtn {
   padding: 10px;
   margin-left: 15px;
   border-radius: 6px;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 #currentPage {
   text-indent: 30px;
@@ -39,6 +49,13 @@ h1 {
 #topicsHead {
   text-indent: 30px;
   margin-top: 15px;
+}
+
+#media1,
+#media2,
+#media3 {
+  max-width: 500px;
+  max-height: 500px;
 }
 /* #home {
   width: 30%;
