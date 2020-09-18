@@ -26,8 +26,8 @@ $("#searchBtn").on("click", function () {
       $("description").text("Description: " + response);
       $("description3").text("Description: " + response);
 
-    });
-})
+    })
+});
 
 $("#musicBtn").on("click", function () {
     var apiKey = "#";
@@ -51,7 +51,7 @@ $("#musicBtn").on("click", function () {
       $("description3").text("Description: " + response);
       
     })
-})
+});
 
 $("#vidBtn").on("click", function () {
     var apiKey = "#";
@@ -76,7 +76,7 @@ $("#vidBtn").on("click", function () {
     })
 })
 
-$("#jokeBtn").on("click", function () {
+$("#picBtn").on("click", function () {
     var apiKey = "#";
     var searchInput = $("#searchInput").val();
     var queryURL = ;
