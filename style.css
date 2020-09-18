@@ -1,65 +1,82 @@
-<<<<<<< HEAD
-#side-bar,
-#nav-bar,
-#main-bar {
-  float: left;
+button {
+  background-color: rgb(213, 172, 252);
+}
+
+#searchAndNav,
+#sideBar,
+#mainSection {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  background-color: rgb(240, 252, 172);
+}
+
+#searchBtn {
+  margin-left: 5px;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.searchBox {
+  margin-top: 20px;
+  max-width: 200px;
+  max-height: 50px;
+}
+
+.headBtn {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+.topicBtn {
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 6px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#currentPage {
+  text-indent: 30px;
+  margin-top: 15px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#topicsHead {
+  text-indent: 30px;
+  margin-top: 15px;
+}
+
+#media1,
+#media2,
+#media3 {
+  max-width: 500px;
+  max-height: 500px;
+}
+/* #home {
+  width: 30%;
+  height: 20%;
 }
 
 #search-bar {
   width: 70%;
 }
 
-#side-bar {
+#songs {
   width: 30%;
   height: 20%;
 }
 
-#nav-bar {
+#games {
   width: 200px;
   height: 200px;
   margin-right: 20px;
 }
-
-#main-bar {
+#videos {
   width: 200px;
   height: 200px;
-}
-=======
-  #nav-bar,
-  #Home,
-  #search-bar,
-  #Songs,
-  #Game,
-  #Videos,
-  #main-bar, {
-    float: left;
-  }
-  
-  #home {
-    width: 30%;
-    height: 20%;
-    color:
- }
-
-  #search-bar {
-    width: 70%;
-  }
-  
-  #songs {
-    width: 30%;
-    height: 20%;
-    color:
-
-  }
-  
-  #games {
-
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
-  }
-  #videos {
-      width: 200px;
-      height: 200px;;
-  }
->>>>>>> 61ccfea69ec166c5809eeb492bf4a8ffd73083d3
+}  */
