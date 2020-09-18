@@ -2,7 +2,43 @@
 #sideBar,
 #mainSection {
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+#searchBtn {
+  margin-bottom: 15px;
+  margin-left: 5px;
+  padding: 15px;
+  border-radius: 6px;
+}
+.searchBox {
+  margin-top: 20px;
+}
+
+.headBtn {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.topicBtn {
+  padding: 10px;
+  margin-left: 15px;
+  border-radius: 6px;
+}
+#currentPage {
+  text-indent: 30px;
+  margin-top: 15px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+#topicsHead {
+  text-indent: 30px;
+  margin-top: 15px;
 }
 /* #home {
   width: 30%;
