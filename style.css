@@ -4,6 +4,12 @@
   font-weight: 200;
   text-align: center;
 }
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  color: #ffffff(red, green, #0000ff);
+  writing-mode: horizontal-tb;
+}
 button {
   background-color: rgb(red, green, blue);
 }
