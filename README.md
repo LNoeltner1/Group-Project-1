@@ -33,11 +33,5 @@ Apis used
 <<<<<<< HEAD
 
 User Story:
-"It isn't always easy monitoring what my kids watch on the internet when I'm not around. I love this app because it allows my kids to surf the web with all adult content filtered out."
+"It isn't always easy monitoring what my kids watch on the internet when I'm not around.I want to keep my kids entertained with safe content while I'm occupied elsewhere. I love this app because it allows my kids to surf the web with all adult content filtered out."
 -Supermom
-
-"As a parent, I want to keep kids entertained with safe content, while I'm occupied elsewhere with peace of mind."
--CoolDad73
-=======
-
-> > > > > > > 79b55fd0c67a232821b5ee2411dfb2625246c17b
