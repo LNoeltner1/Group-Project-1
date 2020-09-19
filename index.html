@@ -26,71 +26,58 @@
         <textarea class="searchBox">Search</textarea>
         <button id="searchBtn">Search</button>
       </section>
-      <section class="col-md-2" id="logo">
+      <section class="col-md-4" id="logo">
         <h1>K!DSTR</h1>
       </section>
-      <div class="bg-image"></div>
-      <section class="col-md-2">
+      <div class="col-md-1 bg-image"></div>
+
         <button id="musicBtn" class="headBtn">Music</button>
       </section>
-      <section class="col-md-2">
+      <section class="col-md-1">
         <button id="vidBtn" class="headBtn">Videos</button>
       </section>
-      <section class="col-md-2">
-        <button id="picBtn" class="headBtn">Pictures</button>
+      <section class="col-md-1">
+        <button id="picBtn" class="headBtn">Pics</button>
+      </section>
+      <section class="col-md-1">
+        <button id="picBtn" class="headBtn">Arts</button>
       </section>
     </header>
     <br />
     <!-- Main -->
     <container class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-2" id="sideBar">
-        <div class="row">
-          <h2 class="col-md-12" id="topicsHead">Topics:</h2>
-        </div>
-        <hr />
-        <div class="row">
-          <button id="funnyBtn" class="topicBtn">Funny</button>
-        </div>
-
-        <div class="row">
-          <button id="learningBtn" class="topicBtn">Learning</button>
-        </div>
-
-        <div class="row">
-          <button id="artBtn" class="topicBtn">Arts & Crafts</button>
-        </div>
-
-        <div class="row">
-          <button id="familyBtn" class="topicBtn">Family</button>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-      <div class="col-md-8" id="mainSection">
+      <div class="col-md-11" id="mainSection">
         <h3 class="row" id="currentPage">Home Page</h3>
         <hr />
         <br />
         <div class="row">
-          <div class="col-md-6" id="media1">*Media Goes Here*</div>
+          <div class="col-md-6" class="media" id="media1">
+            *Media Goes Here*
+          </div>
           <div class="col-md-6">
             <p id="title1">Title:</p>
-            <p id="description1">Description</p>
+            <p id="description1">Description:</p>
           </div>
         </div>
         <hr />
         <div class="row">
-          <div class="col-md-6" id="media2">*Media Goes Here*</div>
+          <div class="col-md-6" class="media" id="media2">
+            *Media Goes Here*
+          </div>
           <div class="col-md-6">
             <p id="title2">Title:</p>
-            <p id="description2">Description</p>
+            <p id="description2">Description:</p>
           </div>
         </div>
         <hr />
         <div class="row">
-          <div class="col-md-6" id="media3">*Media Goes Here*</div>
+          <div class="col-md-6" class="media" id="media3">
+            *Media Goes Here*
+          </div>
           <div class="col-md-6">
             <p id="title3">Title:</p>
-            <p id="description3">Description</p>
+            <p id="description3">Description:</p>
           </div>
         </div>
       </div>
@@ -101,6 +88,7 @@
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       defer
     ></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
     <script rel="stylesheet" src="script.js" id="JS-sheet" async defer></script>
   </body>
 </html>
