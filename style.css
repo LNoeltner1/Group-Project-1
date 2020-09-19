@@ -1,21 +1,33 @@
-button {
-  background-color: rgb(213, 172, 252);
+* {
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: 200;
+  text-align: center;
 }
-
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  color: #ffffff(red, green, #0000ff);
+  writing-mode: horizontal-tb;
+}
+button {
+  background-color: azure;
+}
 #searchAndNav,
 #sideBar,
 #mainSection {
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
-  background-color: rgb(240, 252, 172);
+  background-color: rgb(172, 249, 252);
 }
 
 #searchBtn {
+  border-style: ridge;
   margin-left: 5px;
-  padding: 15px;
+  padding: 12px;
   border-radius: 6px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .searchBox {
   margin-top: 20px;
