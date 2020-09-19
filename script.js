@@ -28,7 +28,7 @@ $("#searchBtn").on("click", function () {
     $("title2").text("Title: " + response);
     $("title3").text("Title: " + response);
     $("description1").text("Description: " + response);
-    $("description").text("Description: " + response);
+    $("description2").text("Description: " + response);
     $("description3").text("Description: " + response);
   });
 });
@@ -36,10 +36,10 @@ $("#searchBtn").on("click", function () {
 $("#musicBtn").on("click", function () {
   var apiKey = "#";
   var searchInput = $("#searchInput").val();
-  var queryURL = "";
   $("#currentPage").text("Music");
+  var cors = "https://cors-anywhere.herokuapp.com/";
   $.ajax({
-    url: queryURL,
+    url: cors + "https://openwhyd.org/c/5f64cfc83fda4a108799a047?format=json",
     method: "GET",
   }).then(function (response) {
     // console.log(response);
@@ -51,7 +51,7 @@ $("#musicBtn").on("click", function () {
     $("title2").text("Title: " + response);
     $("title3").text("Title: " + response);
     $("description1").text("Description: " + response);
-    $("description").text("Description: " + response);
+    $("description2").text("Description: " + response);
     $("description3").text("Description: " + response);
   });
 });
@@ -74,7 +74,7 @@ $("#vidBtn").on("click", function () {
     $("title2").text("Title: " + response);
     $("title3").text("Title: " + response);
     $("description1").text("Description: " + response);
-    $("description").text("Description: " + response);
+    $("description2").text("Description: " + response);
     $("description3").text("Description: " + response);
   });
 });
@@ -97,7 +97,7 @@ $("#picBtn").on("click", function () {
     $("title2").text("Title: " + response);
     $("title3").text("Title: " + response);
     $("description1").text("Description: " + response);
-    $("description").text("Description: " + response);
+    $("description2").text("Description: " + response);
     $("description3").text("Description: " + response);
   });
 });
@@ -121,7 +121,7 @@ $("#artBtn").on("click", function () {
     $("title2").text("Title: " + response);
     $("title3").text("Title: " + response);
     $("description1").text("Description: " + response);
-    $("description").text("Description: " + response);
+    $("description2").text("Description: " + response);
     $("description3").text("Description: " + response);
   });
 });
