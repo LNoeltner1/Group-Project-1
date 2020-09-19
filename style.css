@@ -11,7 +11,7 @@ h1 {
   writing-mode: horizontal-tb;
 }
 button {
-  background-color: rgb(red, green, blue);
+  background-color: azure;
 }
 #searchAndNav,
 #sideBar,
@@ -23,6 +23,7 @@ button {
 }
 
 #searchBtn {
+  border-style: ridge;
   margin-left: 5px;
   padding: 12px;
   border-radius: 6px;
