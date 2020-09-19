@@ -1,4 +1,6 @@
-// add event listeners
+$(document).ready(function() {
+    
+});
 
 var queryURL=
 
@@ -13,14 +15,23 @@ $("#searchBtn").on("click", function () {
       method: "GET",
     }).then(function (response) {
       // console.log(response);
-      $("#currentPage").text(
-        response.name
-      )});
-})
+      $("#currentPage").text("Search:");
+      $("media1").innerHtml();
+      $("media2").innerHtml();
+      $("media3").innerHtml();
+      $("title1").text("Title: " + response);
+      $("title2").text("Title: " + response);
+      $("title3").text("Title: " + response);
+      $("description1").text("Description: " + response);
+      $("description").text("Description: " + response);
+      $("description3").text("Description: " + response);
+
+    })
+});
 
 $("#musicBtn").on("click", function () {
-    var apiKey = "b0346eaaabff07a925bd456a2c1cf5a6";
-    var cityInput = $("#searchInput").val();
+    var apiKey = "#";
+    var searchInput = $("#searchInput").val();
     var queryURL = ;
   
     $.ajax({
@@ -28,14 +39,23 @@ $("#musicBtn").on("click", function () {
       method: "GET",
     }).then(function (response) {
       // console.log(response);
-      $("#currentPage").text(
-        response.name 
-      )})
-})
+      $("#currentPage").text("Music")
+      $("media1").innerHtml();
+      $("media2").innerHtml();
+      $("media3").innerHtml();
+      $("title1").text("Title: " + response);
+      $("title2").text("Title: " + response);
+      $("title3").text("Title: " + response);
+      $("description1").text("Description: " + response);
+      $("description").text("Description: " + response);
+      $("description3").text("Description: " + response);
+      
+    })
+});
 
 $("#vidBtn").on("click", function () {
-    var apiKey = "b0346eaaabff07a925bd456a2c1cf5a6";
-    var cityInput = $("#searchInput").val();
+    var apiKey = "#";
+    var searchInput = $("#searchInput").val();
     var queryURL = ;
   
     $.ajax({
@@ -43,13 +63,22 @@ $("#vidBtn").on("click", function () {
       method: "GET",
     }).then(function (response) {
       // console.log(response);
-      $("#currentPage").text(
-        response.name 
-      )})
+      $("#currentPage").text("Videos")
+      $("media1").innerHtml();
+      $("media2").innerHtml();
+      $("media3").innerHtml();
+      $("title1").text("Title: " + response);
+      $("title2").text("Title: " + response);
+      $("title3").text("Title: " + response);
+      $("description1").text("Description: " + response);
+      $("description").text("Description: " + response);
+      $("description3").text("Description: " + response);
+    })
 })
+
 $("#picBtn").on("click", function () {
-    var apiKey = "b0346eaaabff07a925bd456a2c1cf5a6";
-    var cityInput = $("#searchInput").val();
+    var apiKey = "#";
+    var searchInput = $("#searchInput").val();
     var queryURL = ;
   
     $.ajax({
@@ -57,7 +86,15 @@ $("#picBtn").on("click", function () {
       method: "GET",
     }).then(function (response) {
       // console.log(response);
-      $("#currentPage").text(
-        response.name 
-      )})
+      $("#currentPage").text("Jokes")
+      $("media1").innerHtml();
+      $("media2").innerHtml();
+      $("media3").innerHtml();
+      $("title1").text("Title: " + response);
+      $("title2").text("Title: " + response);
+      $("title3").text("Title: " + response);
+      $("description1").text("Description: " + response);
+      $("description").text("Description: " + response);
+      $("description3").text("Description: " + response);
+    })
 })
