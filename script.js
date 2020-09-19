@@ -26,12 +26,12 @@ $("#searchBtn").on("click", function () {
     // $("media1").innerHtml();
     // $("media2").innerHtml();
     // $("media3").innerHtml();
-    $("title1").text("Title: " + response);
-    $("title2").text("Title: " + response);
-    $("title3").text("Title: " + response);
-    $("description1").text("Description: " + response);
-    $("description2").text("Description: " + response);
-    $("description3").text("Description: " + response);
+    $("#title1").text("Title: " + response);
+    $("#title2").text("Title: " + response);
+    $("#title3").text("Title: " + response);
+    $("#description1").text("Description: " + response);
+    $("#description2").text("Description: " + response);
+    $("#description3").text("Description: " + response);
   });
 });
 
@@ -49,15 +49,15 @@ $("#musicBtn").on("click", function () {
   }).then(function (response) {
     console.log(response);
 
-    // $("media1").innerHtml();
-    // $("media2").innerHtml();
-    // $("media3").innerHtml();
-    $("title1").text("Title: " + response);
-    $("title2").text("Title: " + response);
-    $("title3").text("Title: " + response);
-    $("description1").text("Description: " + response);
-    $("description2").text("Description: " + response);
-    $("description3").text("Description: " + response);
+    // $("#media1").innerHtml();
+    // $("#media2").innerHtml();
+    // $("#media3").innerHtml();
+    $("#title1").text("Title: " + response);
+    $("#title2").text("Title: " + response);
+    $("#title3").text("Title: " + response);
+    $("#description1").text("Description: " + response);
+    $("#description2").text("Description: " + response);
+    $("#description3").text("Description: " + response);
   });
 });
 
@@ -75,12 +75,12 @@ $("#vidBtn").on("click", function () {
     // $("media1").innerHtml();
     // $("media2").innerHtml();
     // $("media3").innerHtml();
-    $("title1").text("Title: " + response);
-    $("title2").text("Title: " + response);
-    $("title3").text("Title: " + response);
-    $("description1").text("Description: " + response);
-    $("description2").text("Description: " + response);
-    $("description3").text("Description: " + response);
+    $("#title1").text("Title: " + response);
+    $("#title2").text("Title: " + response);
+    $("#title3").text("Title: " + response);
+    $("#description1").text("Description: " + response);
+    $("#description2").text("Description: " + response);
+    $("#description3").text("Description: " + response);
   });
 });
 
@@ -98,36 +98,41 @@ $("#picBtn").on("click", function () {
     // $("media1").innerHtml();
     // $("media2").innerHtml();
     // $("media3").innerHtml();
-    $("title1").text("Title: " + response);
-    $("title2").text("Title: " + response);
-    $("title3").text("Title: " + response);
-    $("description1").text("Description: " + response);
-    $("description2").text("Description: " + response);
-    $("description3").text("Description: " + response);
+    $("#title1").text("Title: " + response);
+    $("#title2").text("Title: " + response);
+    $("#title3").text("Title: " + response);
+    $("#description1").text("Description: " + response);
+    $("#description2").text("Description: " + response);
+    $("#description3").text("Description: " + response);
   });
 });
 
 $("#artBtn").on("click", function () {
-  var objectID = "297";
-  var queryURL =
-    "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
-    objectID;
-  $("#currentPage").text("Ninja Turtle Art");
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-    console.log(response.artistDisplayName);
+  for (var i = 0; i < 3; i++) {
+    var objectID = Math.floor(Math.random(1) * 200000);
 
-    // $("media1").innerHtml();
-    // $("media2").innerHtml();
-    // $("media3").innerHtml();
-    $("title1").text(response.title);
-    $("title2").text("Title: " + response);
-    $("title3").text("Title: " + response);
-    $("description1").text("Description: " + response.artistDisplayName);
-    $("description2").text("Description: " + response);
-    $("description3").text("Description: " + response);
-  });
+    console.log(objectID);
+    var queryURL =
+      "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
+      objectID;
+
+    $("#currentPage").text("Ninja Turtle Art");
+    $.ajax({
+      url: queryURL,
+      method: "GET",
+    }).then(function (response) {
+      console.log(response);
+      console.log(response[0]);
+
+      // $("media1").innerHtml();
+      // $("media2").innerHtml();
+      // $("media3").innerHtml();
+      $("#title1").text("Title: " + response.title);
+      $("#title2").text("Title: " + response.title);
+      $("#title3").text("Title: " + response.title);
+      $("#description1").text("Description: " + response.artistDisplayName);
+      $("#description2").text("Description: " + response.artistDisplayName);
+      $("#description3").text("Description: " + response.artistDisplayName);
+    });
+  }
 });
