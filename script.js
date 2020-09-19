@@ -11,7 +11,6 @@ $("#logo").on("click", function () {
 });
 
 $("#searchBtn").on("click", function () {
-  // var apiKey = "#";
   var searchInput = $("searchBox").val();
   var queryURL =
     "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
