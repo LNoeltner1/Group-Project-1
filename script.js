@@ -124,31 +124,17 @@ $("#artBtn").on("click", function () {
 
     if (response.isPublicDomain === true) {
       // $("#media1").prepend("<img id='artImage' src=response.primaryImage />");
-      $("#artImage").attr("src", response.primaryImage);
-      // $("media1").html(response.primaryImage);
-      // $("media2").innerHtml();
-      // $("media3").innerHtml();
-      $("#title1").text("Title: " + response.title);
-      // $("#title2").text("Title: " + response.title);
-      // $("#title3").text("Title: " + response.title);
+      $("#artImage").attr("src", response.primaryImageSmall);
+      $("#title1").text("Title: '" + response.title + "'");
       $("#description1").text(
         "Artist: " +
           response.artistDisplayName +
           ", Year: " +
           response.objectDate
       );
-      // $("#description2").text(
-      //   "Artist: " +
-      //     response.artistDisplayName +
-      //     ", Year: " +
-      //     response.objectDate
-      // );
-      // $("#description3").text(
-      //   "Artist: " +
-      //     response.artistDisplayName +
-      //     ", Year: " +
-      //     response.objectDate
-      // );
+      $("#description2").text(
+        "Medium: " + response.medium + ", Culture: " + response.culture
+      );
     }
     // else (
 
