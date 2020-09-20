@@ -14,25 +14,6 @@ $("#logo").on("click", function () {
   $("#artImage").attr("src", "");
 });
 
-$("#searchBtn").on("click", function () {
-  $("#artImage").attr("src", "");
-  var searchInput = $("searchBox").val();
-  var queryURL =
-    "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
-    searchInput;
-  $("#currentPage").text("Search:");
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-
-    $("media1").text(response);
-    $("#title1").text("Title: " + response);
-    $("#description1").text("Description: " + response);
-  });
-});
-
 $("#musicBtn").on("click", function () {
   $("#artImage").attr("src", "");
   var apiKey = "#";
