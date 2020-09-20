@@ -5,12 +5,38 @@
 // $(document).ready(function () {
 //   $("#permissionPopup").popup("show");
 // });
+$(document).ready(function () {
+  $("#CenterDIV").css("display", "block");
+
+  $("#yesBtn").click(function () {
+    $("#CenterDIV").css("display", "none");
+  });
+  $(".noBtn").click(function () {
+    window.location = "https://sos.fbi.gov/en/";
+  });
+});
+
+// window.onload = function () {
+//   var popup = document.getElementById("#popUp");
+
+//   /* Show the popup. */
+//   popup.attr("class", "");
+
+//   /* Fade the popup in */
+//   setTimeout(() => popup.attr("class", "fade-in"));
+
+//   /* Close the popup when yes selected
+//   // document.getElementById("#yesBtn").onclick = function () {
+//     /* Hide the popup. */
+//   // setTimeout(() => popup.classList.add("hidden"), 300);
+// };
 
 $("#logo").on("click", function () {
   $("#currentPage").text("Home Page");
 });
 
 $("#searchBtn").on("click", function () {
+  $("#artImage").attr("src", "");
   var searchInput = $("searchBox").val();
   var queryURL =
     "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
@@ -35,6 +61,7 @@ $("#searchBtn").on("click", function () {
 });
 
 $("#musicBtn").on("click", function () {
+  $("#artImage").attr("src", "");
   var apiKey = "#";
   var searchInput = $("#searchInput").val();
   var queryURL =
@@ -61,6 +88,7 @@ $("#musicBtn").on("click", function () {
 });
 
 $("#vidBtn").on("click", function () {
+  $("#artImage").attr("src", "");
   var queryURL = "";
   $("#currentPage").text("Videos");
   var cors = "https://cors-anywhere.herokuapp.com/";
@@ -70,9 +98,8 @@ $("#vidBtn").on("click", function () {
     format: "JSON",
   }).then(function (response) {
     console.log(response);
+
     $("#title1").text("Title: " + response);
-    $("#title2").text("Title: " + response);
-    $("#title3").text("Title: " + response);
     $("#description1").text("Description: " + response);
     $("#description2").text("Description: " + response);
     $("#description3").text("Description: " + response);
@@ -81,7 +108,7 @@ $("#vidBtn").on("click", function () {
 
 $("#artBtn").on("click", function () {
   var objectID = Math.floor(Math.random(1) * 700000);
-
+  $("#video").css("display", "none");
   console.log(objectID);
   var queryURL =
     "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
@@ -109,8 +136,8 @@ $("#artBtn").on("click", function () {
     }
   });
 });
-$("div:has(p)").addClass("test");
-elementList = parentNode.querySelectorAll(selectors);
+// $("div:has(p)").addClass("test");
+// elementList = parentNode.querySelectorAll(selectors);
 
 // var cors = "https://cors-anywhere.herokuapp.com/";
 //   $.ajax({
