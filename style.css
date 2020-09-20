@@ -48,7 +48,9 @@ h1 {
   color: #ffffff(red, green, #0000ff);
   writing-mode: horizontal-tb;
 }
+}
 button {
+  text-align:center;
   background-color: azure;
 }
 #searchAndNav,
