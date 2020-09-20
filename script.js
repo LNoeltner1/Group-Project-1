@@ -61,19 +61,15 @@ $("#musicBtn").on("click", function () {
 });
 
 $("#vidBtn").on("click", function () {
-  var apiKey = "#";
-  var searchInput = $("#searchInput").val();
   var queryURL = "";
   $("#currentPage").text("Videos");
+  var cors = "https://cors-anywhere.herokuapp.com/";
   $.ajax({
-    url: queryURL,
+    queryURL: cors + "https://openwhyd.org/hot/classical?format=json/",
     method: "GET",
+    format: "JSON",
   }).then(function (response) {
     console.log(response);
-
-    // $("media1").innerHtml();
-    // $("media2").innerHtml();
-    // $("media3").innerHtml();
     $("#title1").text("Title: " + response);
     $("#title2").text("Title: " + response);
     $("#title3").text("Title: " + response);
@@ -115,3 +111,11 @@ $("#artBtn").on("click", function () {
 });
 $("div:has(p)").addClass("test");
 elementList = parentNode.querySelectorAll(selectors);
+
+// var cors = "https://cors-anywhere.herokuapp.com/";
+//   $.ajax({
+//     url:"https://openwhyd.org/hot/classical?format=json/",
+//     method: "GET",
+//   }).then(function (response) {
+//     console.log(response);
+//   });
