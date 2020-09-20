@@ -1,11 +1,3 @@
-
-$(document).ready(function () {
-
-});
-
-var queryURL =
-
-
 // To create a popup, add the data-role="popup" attribute to a div with
 // the popup contents. Then create a link with the href set to the id of
 // the popup div, and add the attribute data-rel="popup" to tell the framework
@@ -43,124 +35,93 @@ $("#logo").on("click", function () {
   $("#currentPage").text("Home Page");
 });
 
-    $("#searchBtn").on("click", function () {
-        var apiKey = "#";
-        var searchInput = $("searchBox").val();
-        var queryURL = "#";
-
-        $.ajax({
-            url: queryURL,
-            method: "GET",
-        }).then(function (response) {
-            // console.log(response);
-            $("#currentPage").text("Search:");
-            $("media1").innerHtml();
-            $("media2").innerHtml();
-            $("media3").innerHtml();
-            $("title1").text("Title: " + response);
-            $("title2").text("Title: " + response);
-            $("title3").text("Title: " + response);
-            $("description1").text("Description: " + response);
-            $("description2").text("Description: " + response);
-
-
-    $("#logo").on("click", function () {
-        $("#currentPage").text("Home Page");
-    });
-
 $("#searchBtn").on("click", function () {
-    var apiKey = "#";
-    var searchInput = $("searchBox").val();
-    var queryURL = "#";
+  var apiKey = "#";
+  var searchInput = $("searchBox").val();
+  var queryURL = "#";
 
-    $.ajax({
-        url: queryURL,
-        method: "GET",
-    }).then(function (response) {
-        // console.log(response);
-        $("#currentPage").text("Search:");
-        $("media1").innerHtml();
-        $("media2").innerHtml();
-        $("media3").innerHtml();
-        $("title1").text("Title: " + response);
-        $("title2").text("Title: " + response);
-        $("title3").text("Title: " + response);
-        $("description1").text("Description: " + response);
-        $("description2").text("Description: " + response);
-        $("description3").text("Description: " + response);
-
-    })
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    // console.log(response);
+    $("#currentPage").text("Search:");
+    $("media1").innerHtml();
+    $("media2").innerHtml();
+    $("media3").innerHtml();
+    $("title1").text("Title: " + response);
+    $("title2").text("Title: " + response);
+    $("title3").text("Title: " + response);
+    $("description1").text("Description: " + response);
+    $("description2").text("Description: " + response);
+    $("description3").text("Description: " + response);
+  });
 });
 
 $("#musicBtn").on("click", function () {
-    var apiKey = "#";
-    var searchInput = $("#searchInput").val();
-    var queryURL =
-
-        $.ajax({
-            url: queryURL,
-            method: "GET",
-        }).then(function (response) {
-            // console.log(response);
-            $("#currentPage").text("Music")
-            $("media1").innerHtml();
-            $("media2").innerHtml();
-            $("media3").innerHtml();
-            $("title1").text("Title: " + response);
-            $("title2").text("Title: " + response);
-            $("title3").text("Title: " + response);
-            $("description1").text("Description: " + response);
-            $("description2").text("Description: " + response);
-            $("description3").text("Description: " + response);
-
-        })
+  var apiKey = "#";
+  var searchInput = $("#searchInput").val();
+  var queryURL = $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    // console.log(response);
+    $("#currentPage").text("Music");
+    $("media1").innerHtml();
+    $("media2").innerHtml();
+    $("media3").innerHtml();
+    $("title1").text("Title: " + response);
+    $("title2").text("Title: " + response);
+    $("title3").text("Title: " + response);
+    $("description1").text("Description: " + response);
+    $("description2").text("Description: " + response);
+    $("description3").text("Description: " + response);
+  });
 });
 
 $("#vidBtn").on("click", function () {
-    var apiKey = "#";
-    var searchInput = $("#searchInput").val();
-    var queryURL =
-
-        $.ajax({
-            url: queryURL,
-            method: "GET",
-        }).then(function (response) {
-            // console.log(response);
-            $("#currentPage").text("Videos")
-            $("media1").innerHtml();
-            $("media2").innerHtml();
-            $("media3").innerHtml();
-            $("title1").text("Title: " + response);
-            $("title2").text("Title: " + response);
-            $("title3").text("Title: " + response);
-            $("description1").text("Description: " + response);
-            $("description2").text("Description: " + response);
-            $("description3").text("Description: " + response);
-        })
-})
+  var apiKey = "#";
+  var searchInput = $("#searchInput").val();
+  var queryURL = $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    // console.log(response);
+    $("#currentPage").text("Videos");
+    $("media1").innerHtml();
+    $("media2").innerHtml();
+    $("media3").innerHtml();
+    $("title1").text("Title: " + response);
+    $("title2").text("Title: " + response);
+    $("title3").text("Title: " + response);
+    $("description1").text("Description: " + response);
+    $("description2").text("Description: " + response);
+    $("description3").text("Description: " + response);
+  });
+});
 
 $("#picBtn").on("click", function () {
-    var apiKey = "#";
-    var searchInput = $("#searchInput").val();
-    var queryURL = ;
+  var apiKey = "#";
+  var searchInput = $("#searchInput").val();
+  var queryURL = "";
 
-    $.ajax({
-        url: queryURL,
-        method: "GET",
-    }).then(function (response) {
-        // console.log(response);
-        $("#currentPage").text("Jokes")
-        $("media1").innerHtml();
-        $("media2").innerHtml();
-        $("media3").innerHtml();
-        $("title1").text("Title: " + response);
-        $("title2").text("Title: " + response);
-        $("title3").text("Title: " + response);
-        $("description1").text("Description: " + response);
-        $("description2").text("Description: " + response);
-        $("description3").text("Description: " + response);
-    })
-})
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    // console.log(response);
+    $("#currentPage").text("Jokes");
+    $("media1").innerHtml();
+    $("media2").innerHtml();
+    $("media3").innerHtml();
+    $("title1").text("Title: " + response);
+    $("title2").text("Title: " + response);
+    $("title3").text("Title: " + response);
+    $("description1").text("Description: " + response);
+    $("description2").text("Description: " + response);
+    $("description3").text("Description: " + response);
+  });
+});
 $("#searchBtn").on("click", function () {
   $("#artImage").attr("src", "");
   var searchInput = $("searchBox").val();
