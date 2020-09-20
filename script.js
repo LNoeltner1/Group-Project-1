@@ -3,7 +3,7 @@
 // the popup div, and add the attribute data-rel="popup" to tell the framework
 // to open the popup when the link is tapped.
 // $(document).ready(function () {
-//   $("#permissionPopup").modal("show");
+//   $("#permissionPopup").popup("show");
 // });
 
 $("#logo").on("click", function () {
@@ -22,7 +22,7 @@ $("#searchBtn").on("click", function () {
   }).then(function (response) {
     console.log(response);
 
-    // $("media1").innerHtml();
+    $("media1").text(response);
     // $("media2").innerHtml();
     // $("media3").innerHtml();
     $("#title1").text("Title: " + response);
@@ -107,31 +107,51 @@ $("#picBtn").on("click", function () {
 });
 
 $("#artBtn").on("click", function () {
-  for (var i = 0; i < 3; i++) {
-    var objectID = Math.floor(Math.random(1) * 200000);
+  var objectID = Math.floor(Math.random(1) * 400000);
 
-    console.log(objectID);
-    var queryURL =
-      "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
-      objectID;
+  console.log(objectID);
+  var queryURL =
+    "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
+    objectID;
 
-    $("#currentPage").text("Ninja Turtle Art");
-    $.ajax({
-      url: queryURL,
-      method: "GET",
-    }).then(function (response) {
-      console.log(response);
-      console.log(response[0]);
+  $("#currentPage").text("Art from the Museum");
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+    // console.log(response);
 
-      // $("media1").innerHtml();
+    if (response.isPublicDomain === true) {
+      // $("#media1").prepend("<img id='artImage' src=response.primaryImage />");
+      $("#artImage").attr("src", response.primaryImage);
+      // $("media1").html(response.primaryImage);
       // $("media2").innerHtml();
       // $("media3").innerHtml();
       $("#title1").text("Title: " + response.title);
-      $("#title2").text("Title: " + response.title);
-      $("#title3").text("Title: " + response.title);
-      $("#description1").text("Description: " + response.artistDisplayName);
-      $("#description2").text("Description: " + response.artistDisplayName);
-      $("#description3").text("Description: " + response.artistDisplayName);
-    });
-  }
+      // $("#title2").text("Title: " + response.title);
+      // $("#title3").text("Title: " + response.title);
+      $("#description1").text(
+        "Artist: " +
+          response.artistDisplayName +
+          ", Year: " +
+          response.objectDate
+      );
+      // $("#description2").text(
+      //   "Artist: " +
+      //     response.artistDisplayName +
+      //     ", Year: " +
+      //     response.objectDate
+      // );
+      // $("#description3").text(
+      //   "Artist: " +
+      //     response.artistDisplayName +
+      //     ", Year: " +
+      //     response.objectDate
+      // );
+    }
+    // else (
+
+    // )
+  });
 });
