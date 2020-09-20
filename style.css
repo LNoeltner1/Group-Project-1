@@ -22,9 +22,9 @@
   height: auto;
   padding: 20px;
   border: solid 1px #999;
-  -webkit-border-radius: 3px;
+  border-radius: 3px;
   -webkit-box-orient: vertical;
-  -webkit-transition: 200ms -webkit-transform;
+  transition: 200ms -webkit-transform;
   box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
   display: block;
 }
@@ -107,26 +107,3 @@ h1 {
   max-height: 500px;
   margin-left: 20px;
 }
-/* #home {
-  width: 30%;
-  height: 20%;
-}
-
-#search-bar {
-  width: 70%;
-}
-
-#songs {
-  width: 30%;
-  height: 20%;
-}
-
-#games {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-}
-#videos {
-  width: 200px;
-  height: 200px;
-}  */
