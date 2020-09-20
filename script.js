@@ -9,10 +9,9 @@ $(document).ready(function () {
   });
 });
 
-
-
 $("#logo").on("click", function () {
-    $("#currentPage").text("Home Page");
+  $("#currentPage").text("Home Page");
+  $("#artImage").attr("src", "");
 });
 
 $("#searchBtn").on("click", function () {
@@ -29,14 +28,8 @@ $("#searchBtn").on("click", function () {
     console.log(response);
 
     $("media1").text(response);
-    // $("media2").innerHtml();
-    // $("media3").innerHtml();
     $("#title1").text("Title: " + response);
-    $("#title2").text("Title: " + response);
-    $("#title3").text("Title: " + response);
     $("#description1").text("Description: " + response);
-    $("#description2").text("Description: " + response);
-    $("#description3").text("Description: " + response);
   });
 });
 
@@ -56,25 +49,21 @@ $("#musicBtn").on("click", function () {
     console.log(response);
 
     // $("#media1").innerHtml();
-    // $("#media2").innerHtml();
-    // $("#media3").innerHtml();
     $("#title1").text("Title: " + response);
-    $("#title2").text("Title: " + response);
-    $("#title3").text("Title: " + response);
+
     $("#description1").text("Description: " + response);
     $("#description2").text("Description: " + response);
-    $("#description3").text("Description: " + response);
   });
 });
 
 $("#vidBtn").on("click", function () {
   $("#video").css("display", "block");
   $("#artImage").attr("src", "");
-  var queryURL = "";
+  var queryURL = "https://openwhyd.org/hot/classical?format=json/";
   $("#currentPage").text("Videos");
   var cors = "https://cors-anywhere.herokuapp.com/";
   $.ajax({
-    queryURL: cors + "https://openwhyd.org/hot/classical?format=json/",
+    queryURL: cors,
     method: "GET",
     format: "JSON",
   }).then(function (response) {
@@ -83,7 +72,6 @@ $("#vidBtn").on("click", function () {
     $("#title1").text("Title: " + response);
     $("#description1").text("Description: " + response);
     $("#description2").text("Description: " + response);
-    $("#description3").text("Description: " + response);
   });
 });
 
@@ -95,26 +83,25 @@ $("#artBtn").on("click", function () {
     "https://collectionapi.metmuseum.org/public/collection/v1/objects/" +
     objectID;
 
-    $("#currentPage").text("Art from the Museum");
-    $.ajax({
-        url: queryURL,
-        method: "GET",
-    }).then(function (response) {
-        console.log(response);
-        // console.log(response);
-        if (response.primaryImageSmall !== null || response !== null) {
-            $("#artImage").attr("src", response.primaryImageSmall);
-            $("#title1").text("Title: '" + response.title + "'");
-            $("#description1").text(
-                "Artist: " +
-                response.artistDisplayName +
-                ", Year: " +
-                response.objectDate
-            );
-            $("#description2").text(
-                "Medium: " + response.medium + ", Culture: " + response.culture
-            );
-        }
-    });
+  $("#currentPage").text("Art from the Museum");
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+    // console.log(response);
+    if (response.primaryImageSmall !== null || response !== null) {
+      $("#artImage").attr("src", response.primaryImageSmall);
+      $("#title1").text("Title: '" + response.title + "'");
+      $("#description1").text(
+        "Artist: " +
+          response.artistDisplayName +
+          ", Year: " +
+          response.objectDate
+      );
+      $("#description2").text(
+        "Medium: " + response.medium + ", Culture: " + response.culture
+      );
+    }
+  });
 });
-

@@ -47,10 +47,11 @@ h1 {
   text-align: center;
   color: #ffffff(red, green, #0000ff);
   writing-mode: horizontal-tb;
+  font-family: Arial, Helvetica, sans-serif;
 }
-}
+
 button {
-  text-align:center;
+  text-align: center;
   background-color: azure;
 }
 #searchAndNav,
