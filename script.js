@@ -175,6 +175,7 @@ $("#musicBtn").on("click", function () {
 });
 
 $("#vidBtn").on("click", function () {
+  $("#video").css("display", "block");
   $("#artImage").attr("src", "");
   var queryURL = "";
   $("#currentPage").text("Videos");
