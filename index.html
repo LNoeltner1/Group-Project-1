@@ -20,11 +20,7 @@
   <body>
     <!-- Header -->
     <header class="row" id="searchAndNav">
-      <section class="col-md-3">
-        <textarea class="searchBox">Search</textarea>
-        <button id="searchBtn">Search</button>
-      </section>
-      <section class="col-md-3" id="logo">
+      <section class="col-md-6" id="logo">
         <h1>K!DSTR</h1>
       </section>
       <section class="col-md-2">
@@ -49,9 +45,8 @@
         <div class="row">
           <div class="col-md-6" class="media" id="media1">
             <img src="" id="artImage"></img>
-            <video width="320" height="240" controls>
+            <video width="320" height="240" controls class="show" id="video">
               <source src="" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
             </video>
           </div>
           <div class="col-md-6">
@@ -64,7 +59,13 @@
       </div>
     </container>
     <!-- Age restriction popup -->
-
+    <div id="CenterDIV">
+      <div class="divFloat">    
+          <p>Do you have permission from you parents to view this site?</p>
+          <p><input type="button" class="noBtn" value="No" /></p>
+          <p><input type="button" id="yesBtn" class="yesBtn" value="Yes" /></p>
+      </div>
+    </div>
 
     <!-- JS scripts -->
     <script
