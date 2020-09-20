@@ -83,31 +83,8 @@ $("#vidBtn").on("click", function () {
   });
 });
 
-$("#picBtn").on("click", function () {
-  var apiKey = "#";
-  var searchInput = $("#searchInput").val();
-  var queryURL = "";
-  $("#currentPage").text("Pictures");
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-
-    // $("media1").innerHtml();
-    // $("media2").innerHtml();
-    // $("media3").innerHtml();
-    $("#title1").text("Title: " + response);
-    $("#title2").text("Title: " + response);
-    $("#title3").text("Title: " + response);
-    $("#description1").text("Description: " + response);
-    $("#description2").text("Description: " + response);
-    $("#description3").text("Description: " + response);
-  });
-});
-
 $("#artBtn").on("click", function () {
-  var objectID = Math.floor(Math.random(1) * 400000);
+  var objectID = Math.floor(Math.random(1) * 700000);
 
   console.log(objectID);
   var queryURL =
@@ -121,9 +98,7 @@ $("#artBtn").on("click", function () {
   }).then(function (response) {
     console.log(response);
     // console.log(response);
-
-    if (response.isPublicDomain === true) {
-      // $("#media1").prepend("<img id='artImage' src=response.primaryImage />");
+    if (response.primaryImageSmall !== null || response !== null) {
       $("#artImage").attr("src", response.primaryImageSmall);
       $("#title1").text("Title: '" + response.title + "'");
       $("#description1").text(
@@ -136,8 +111,7 @@ $("#artBtn").on("click", function () {
         "Medium: " + response.medium + ", Culture: " + response.culture
       );
     }
-    // else (
-
-    // )
   });
 });
+$("div:has(p)").addClass("test");
+elementList = parentNode.querySelectorAll(selectors);
