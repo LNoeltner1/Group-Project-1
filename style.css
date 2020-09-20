@@ -10,7 +10,9 @@ h1 {
   color: #ffffff(red, green, #0000ff);
   writing-mode: horizontal-tb;
 }
+}
 button {
+  text-align:center;
   background-color: azure;
 }
 #searchAndNav,
@@ -69,26 +71,3 @@ h1 {
   max-height: 500px;
   margin-left: 20px;
 }
-/* #home {
-  width: 30%;
-  height: 20%;
-}
-
-#search-bar {
-  width: 70%;
-}
-
-#songs {
-  width: 30%;
-  height: 20%;
-}
-
-#games {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
-}
-#videos {
-  width: 200px;
-  height: 200px;
-}  */
