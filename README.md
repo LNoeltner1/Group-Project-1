@@ -30,7 +30,8 @@ Sydney Buchanan
 Wilmer Rivera
 
 Apis used
-<<<<<<< HEAD
+Open Whyd
+CollectionApi Met Museum
 
 User Story:
 "It isn't always easy monitoring what my kids watch on the internet when I'm not around.I want to keep my kids entertained with safe content while I'm occupied elsewhere. I love this app because it allows my kids to surf the web with all explicit content filtered out."
